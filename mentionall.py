@@ -361,7 +361,7 @@ async def handler(event):
 @client.on(events.NewMessage(pattern='/bagis'))
 async def handler(event):
 	
-    await event.reply('**Tagger Botun Bağış Menüsü** \n\n__Papara No:__ `1744892543` \n\n  ✨')
+    await event.reply('**Tagger Botun Bağış Menüsü** \n\n__Papara No:__ `1160224859` \n\n  ✨')
 
 @client.on(events.NewMessage(pattern='/reklam'))
 async def handler(event):
@@ -374,7 +374,7 @@ async def start(event):
                     buttons=(
                       
                       [Button.url('Beni Gruba Ekle ➕', f"https://t.me/{bot_username}?startgroup=a")],
-                      [Button.url('Support🛠', f"https://t.me/{support}")],
+                      [Button.url('Support🛠', f"https://t.me/ondanbitmis")],
                       [Button.url('Sahibim', f"https://t.me/ondanbitmis")],
 		                  [Button.url('Developer👨🏻‍💻', 'https://t.me/ondanbitmis')],
 		                  [Button.url('Github Code', 'https://derdomucis.com')],
